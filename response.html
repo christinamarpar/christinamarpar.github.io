@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pymaceuticals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>    
+        /* Set black background color, white text and some padding */
+        footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Pymaceuticals, Inc.</a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="response.html">Tumor Response</a></li>
+                                <li><a href="spread.html">Tumor Spread</a></li>
+                                <li><a href="survival.html">Survival Rates</a></li>
+                                <li><a href="change.html">Tumor Change</a></li>
+                            </ul>
+                        </li>
+                            <li><a href="comparison.html">Comparison</a></li>
+                            <li><a href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well" style="float: center">
+                        <h2>
+                            The Effect of Pharmaceutical Treatments on Cancer in Mice
+                        </h2>
+                        <img src="output_16_0.png" 
+                        title="Tumor Response to Treatment"
+                        alt="Tumor Response to Treatment"
+                        href="#"
+                        style="height:500px;width:600px;"
+                        />
+                        <p style="font-size:150%;">
+                        Finding 1: Capomulin was the only drug over the course of the trial period that reduced the size of the cancerous tumor.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>    
