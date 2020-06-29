@@ -1,106 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Pymaceuticals</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>    
-        /* Set black background color, white text and some padding */
-        footer {
-        background-color: #555;
-        color: white;
-        padding: 15px;
-        }
-    </style>
-</head>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="index.html">Pymaceuticals, Inc.</a>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="response.html">Tumor Response</a></li>
-                            <li><a href="spread.html">Tumor Spread</a></li>
-                            <li><a href="survival.html">Survival Rates</a></li>
-                            <li><a href="change.html">Tumor Change</a></li>
-                        </ul>
-                    </li>
-                        <li><a href="comparison.html">Comparison</a></li>
-                        <li><a href="data.html">Data</a>
-                    </li>
-                </ul>
-            </div>
+    <body>
+
+        <div class="header">
+            <h1>Christina Park</h1>
         </div>
-    </nav>
 
-    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-7">
-                <div class="well" style="float: center">
-                    <h2>
-                        The Effect of Pharmaceutical Treatments on Cancer in Mice
-                    </h2>
-                    <img class="pull-left" src="lab_tech.png" 
-                    style="float: center;height:300px;width:500px;"
-                    title="Pymaceuticals Lab Technician"
-                    alt="Pymaceuticals Lab Technician"
-                    href="#"/>
-                    <p style="font-size:150%;">
-                    Pymaceuticals Inc. specializes in drug-based, anti-cancer pharmaceuticals. In our most recent efforts, 
-                    we've begun screening for potential treatments to squamous cell carcinoma (SCC), a commonly 
-                    occurring form of skin cancer. <br><br>
-                    In this study, 250 mice were treated through a variety of drug regimes over the course of 45 days. 
-                    Mice were given one of four treatments: Capomulin, Infubinol, Ketapril, and a placebo.
-                    Their physiological responses were then monitored over the course of that time. 
-                    Herein, we illustrate the results of this study. 
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="well" style="float: center;">
-                    <h2>
-                        Visualizations
-                    </h2>
-                        <img class="rounded float-center" src="output_16_0.png" 
-                            title="Tumor Response to Treatment"
-                            alt="Tumor Response to Treatment"
-                            href="#"
-                            style="height:250px;width:300px;"
-                        />
-                        <img class="rounded float-center" src="output_25_0.png" 
-                            title="Metastatic Spread During Treatment"
-                            alt="Metastatic Spread During Treatment" 
-                            style="height:250px;width:300px;"
-                        />
-                        <img class="rounded float-center" src="output_34_0.png" 
-                            title="Survival During Treatment"
-                            alt="Survival During Treatment" 
-                            style="height:250px;width:300px;"
-                        />
-                        <img class="rounded float-center" src="output_40_0.png" 
-                            title="Tumor Change Over 45 Day Treatment"
-                            alt="Tumor Change Over 45 Day Treatment" 
-                            style="height:250px;width:300px;"
-                        />
-                </div> 
+        <div class="col-3 col-s-3 menu">
+            <ul>
+            <li id="CVlink"><a href="CV.html">Curriculum Vitae</a></li>
+            <li>In-Progress Work</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h2>Widget</h2>
+            <p>Practice using D3.js on trade data:</p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+            <h2>Currently Reading:</h2>
+            <p>Theory of International Trade by Dixit and Norman.</p>
             </div>
         </div>
-    </div>
-</body>
+        </div>
+
+        <div class="footer">
+        <p>Copyright &copy; 2020 Christina Park - All Rights Reserved.</p>
+        </div>
+
+    </body>
+    <script src="app.js" charset="utf-8"></script>
 </html>
