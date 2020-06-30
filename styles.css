@@ -1,6 +1,77 @@
+/* ----------------------------------------------------------------------- */
+/* CSS RESET */
+/* ----------------------------------------------------------------------- */
 * {
   box-sizing: border-box;
 }
+
+/* ----------------------------------------------------------------------- */
+/* HTML (Root element of document, precedes 'body') */
+/* ----------------------------------------------------------------------- */
+html {
+  font-family: "Apple Chancery", cursive;
+}
+
+/* ----------------------------------------------------------------------- */
+/* HEADERS AND FOOTERS */
+/* ----------------------------------------------------------------------- */
+
+.header {
+  background-color: #aaeaff;
+  color: #0f5a74;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  box-shadow: 0 0 10px #00a7df;
+}
+
+.footer {
+  background-color: #ccf1fd;
+  color: #0f5a74;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+h2.blue { color:#0f5a74; }
+h3.blue { 
+    color: #0f5a74; 
+    font-size: x-large;
+}
+h3.inlineblue { 
+    display: inline;
+    color: #007197; 
+    font-size: x-large;
+}
+
+h4 {
+  font-size: large;
+}
+
+h4.inlineblue { 
+  float: right;
+
+  color: #007197; 
+  font-size: large;
+
+}
+
+h5 {
+  font-size: large;
+  color: #373838;
+}
+
+h5.inline { 
+  display: inline;
+}
+
+/* #CVname:hover {
+  background-color: #00a7df; 
+} */
+
+/* ----------------------------------------------------------------------- */
+/* ROWS */
+/* ----------------------------------------------------------------------- */
 
 .row::after {
   content: "";
@@ -8,38 +79,9 @@
   display: table;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Apple Chancery", cursive;
-}
-
-.header {
-  background-color: #0099cc;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 15px;
-  box-shadow: 0 0 10px #00a7df;
-}
-
-#CVname {
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    text-align: center;
-    background-color: #aaeaff;
-    border-radius: 10%;
-    border-style: solid;
-    color: #0f5a74;
-    box-shadow: 0 0 0px;
-    padding: 30px;
-}
-
-#CVname:hover {
-    /* background-color: #00a7df; */
-}
+/* ----------------------------------------------------------------------- */
+/* HTML LINKS */
+/* ----------------------------------------------------------------------- */
 
 a:link, a:visited {
   color: #0f5a74;
@@ -52,53 +94,24 @@ a:link:active, a:visited:active {
   color: #0f5a74;
 }
 
-h2.blue { color:#0f5a74; }
-h3.blue { 
-    color: #007197; 
-    font-size: x-large;
-}
-h3.inlineblue { 
-    display: inline;
-    color: #007197; 
-    font-size: x-large;
-}
+/* ----------------------------------------------------------------------- */
+/* MENU */
+/* ----------------------------------------------------------------------- */
 
-#CVrow {
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    color: #373838;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: large;
-}
-
-h4.inlineblue { 
-    float: right;
-
-    color: #007197; 
-    font-size: large;
-
-}
-
-h5 {
-    font-size: large;
-    color: #373838;
-}
-
-h5.inline { 
-    display: inline;
-}
-
-ul {
+/* ul {
     list-style: none;
     padding-left: 0;
-}​
+}​ */
 
 .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.menu ul.circles {
+  list-style-type: circle;
+  color: blue;
 }
 
 .menu li {
@@ -124,6 +137,10 @@ ul li.right {
     color: #373838;
 }
   
+/* ----------------------------------------------------------------------- */
+/* OTHER */
+/* ----------------------------------------------------------------------- */
+
 .aside {
   background-color: #ffc04bf8;
   padding: 15px;
@@ -133,13 +150,39 @@ ul li.right {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
+/* Classes: */
+[class*="col-"] {
+  float: left;
   padding: 15px;
 }
+
+/* ----------------------------------------------------------------------- */
+/* ID STYLES */
+/* ----------------------------------------------------------------------- */
+
+/* For CV */
+
+#CVname {
+  font-family: "Apple Chancery", cursive;
+  /* font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  text-align: center;
+  background-color: #aaeaff;
+  border-radius: 10%;
+  border-style: solid;
+  color: #0f5a74;
+  box-shadow: 0 0 0px;
+  padding: 30px; */
+} 
+
+#CVrow {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  color: #373838;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------- */
+/* RESPONSIVE DESIGN */
+/* ----------------------------------------------------------------------- */
 
 /* For mobile phones: */
 [class*="col-"] {
