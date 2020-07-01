@@ -33,6 +33,9 @@ html {
   padding: 15px;
 }
 
+h1 {
+  font-family: "Apple Chancery", cursive;
+}
 h2.blue { color:#0f5a74; }
 h3.blue { 
     color: #0f5a74; 
@@ -163,21 +166,21 @@ ul li.right {
 /* For CV */
 
 #CVname {
-  font-family: "Apple Chancery", cursive;
-  /* font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-  text-align: center;
-  background-color: #aaeaff;
-  border-radius: 10%;
-  border-style: solid;
-  color: #0f5a74;
-  box-shadow: 0 0 0px;
-  padding: 30px; */
+  padding-top: 15px;
 } 
 
 #CVrow {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
   color: #373838;
   font-weight: bold;
+}
+
+#Download {
+  padding-top: 15px;
+  display: flex; 
+  justify-content: center;
+  text-decoration: underline;
+  
 }
 
 /* ----------------------------------------------------------------------- */
