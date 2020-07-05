@@ -16,32 +16,35 @@
                 <div class="container">
 
                     <form 
-                        id="myForm" 
-                        action="https://hooks.zapier.com/hooks/catch/7953193/ozomdd3" 
-                        type="POST"
+                        id="contact-form" 
+                        method="POST"
                     >
 
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name.."  required >
+                    <!-- action="https://hooks.zapier.com/hooks/catch/7953193/ozomdd3" 
+                    type="POST" -->
 
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject.."  required >
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name-input" placeholder="Your name.."  required >
+
+                        <label for="subject">Subject*</label>
+                        <input type="text" id="subject" name="subject-input" placeholder="Subject.."  required >
                     
-                        <label for="message">Message</label>
-                        <textarea type="text" id="message" name="message" placeholder="Message.."  required  style="height:200px"></textarea>
+                        <label for="message">Message*</label>
+                        <textarea type="text" id="message" name="message-input" placeholder="Message.."  required  style="height:200px"></textarea>
                         
                         <br>
-                        <label for="email">E-mail Address: </label>
-                        <input type="email" id="email" name="email" placeholder="Your e-mail.."  required >
+                        <label for="email">E-mail Address*: </label>
+                        <input type="email" id="email" name="email-input" placeholder="Your e-mail.."  required style="width:100%;">
 
-                        <!-- <label><input id="profile_listserve"  type="checkbox" checked > 
-                            Yes, I would like to be added to your mailing list.</label> -->
+                        <!-- The following is an invisible input box, so only a spammer bot will fill it in. -->
+                        <!-- <input type="text" name="foo" style="display: none;"> -->
 
-                        <!-- <input type="submit" value="Submit"> -->
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div> -->
                         
                         <div style="text-align:center;">
                             <br>
-                            <input type="submit" value="Submit" id="Form-submit" />
+                            <p>Submit button coming soon, thank you for your patience! :)</p>
+                            <!-- <input type="submit" value="Submit" id="Form-submit" /> -->
                         </div>
                     </form>
                     
@@ -54,6 +57,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="app.js"> </script>
-        
+
     </body>
 </html>
