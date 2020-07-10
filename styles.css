@@ -74,6 +74,10 @@ h2 {
   margin-top: 0px;
 }
 
+#col h2 {
+  text-align:center;
+}
+
 h2.blue { 
   color:#0f5a74; 
 }
