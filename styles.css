@@ -81,6 +81,11 @@ h2 {
 h2.blue { 
   color:#0f5a74; 
 }
+
+h3 { 
+  font-size: large;
+}
+
 h3.blue { 
     color: #0f5a74; 
     font-size: x-large;
@@ -92,7 +97,7 @@ h3.inlineblue {
 }
 
 h4 {
-  font-size: large;
+  font-size: medium;
 }
 
 h4.inlineblue { 
