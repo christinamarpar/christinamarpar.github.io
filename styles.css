@@ -203,7 +203,7 @@ a:link:active, a:visited:active {
 }
 
 .col-3.col-s-3.menu {
-  padding-bottom: 0px;
+  padding: 0px 15px;
 }
 
 .col-3.col-s-3.menu ul {
@@ -211,11 +211,11 @@ a:link:active, a:visited:active {
 }
 
 #col.col-6.col-s-12 {
-  padding-bottom: 0px;
+  padding: 0px 15px;
 }
 
 #col.col-3.col-s-12 {
-  padding-bottom: 0px;
+  padding: 0px 15px;
 }
 
 .menu ul {
@@ -364,7 +364,7 @@ input[type=submit]:hover {
 }
 
 #content-wrap {
-  padding: 2.5rem;    /* Footer height */
+  padding: 20px;    /* Footer height */
 }
 
 /* ----------------------------------------------------------------------- */
