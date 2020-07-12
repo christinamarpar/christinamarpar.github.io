@@ -18,6 +18,10 @@ html {
 /* HEADERS AND FOOTERS */
 /* ----------------------------------------------------------------------- */
 
+div.row {
+  padding-bottom: 0;
+}
+
 div.header {
   background-color: #aaeaff;
   color: #0f5a74;
@@ -202,6 +206,10 @@ a:link:active, a:visited:active {
 }
 
 #col.col-6.col-s-12 {
+  padding-bottom: 0px;
+}
+
+#col.col-3.col-s-12 {
   padding-bottom: 0px;
 }
 
