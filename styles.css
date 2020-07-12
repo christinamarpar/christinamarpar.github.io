@@ -120,6 +120,7 @@ h2 {
   margin: 15px;
   /* padding: 15px; */
   list-style-type: inherit;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2.blue { 
@@ -286,6 +287,10 @@ ul li.right {
 
 #notes {
   padding-left: 15px;
+}
+
+#main-signup {
+  font-family: 'Montserrat', sans-serif;;
 }
 
 /* ----------------------------------------------------------------------- */
