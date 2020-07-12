@@ -11,7 +11,7 @@
 /* HTML (Root element of document, precedes 'body') */
 /* ----------------------------------------------------------------------- */
 html {
-  font-family: "Apple Chancery", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: cursive, 'Dancing Script', "Apple Chancery";
 }
 
 /* ----------------------------------------------------------------------- */
@@ -56,7 +56,7 @@ div.header h1 {
   bottom: 0; 
   width: 100%;
   height: 2.5rm;
-  font-family: "Apple Chancery", cursive, Cambria;
+  font-family: cursive, 'Dancing Script', "Apple Chancery";
 }
 
 .footer_below p {
@@ -75,7 +75,7 @@ div.header h1 {
   bottom: -1; 
   width: 100%;
   height: 2.5rm;
-  font-family: "Apple Chancery", cursive, Cambria;
+  font-family: cursive, 'Dancing Script', "Apple Chancery";
 }
 
 .CVfooter {
@@ -91,7 +91,7 @@ div.header h1 {
 }
 
 .paragraph {
-  font-family: Calibri, Georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: large;
   padding-top: 10px;
 }
@@ -101,7 +101,7 @@ div.header h1 {
 }
 
 h1 {
-  font-family: "Apple Chancery", cursive, Cambria;
+  font-family: cursive, 'Dancing Script', "Apple Chancery";
 }
 
 h2 { 
