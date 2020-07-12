@@ -91,7 +91,7 @@ div.header h1 {
 .paragraph {
   font-family: Calibri, Georgia, serif;
   font-size: large;
-  font-weight: 500;
+  padding-top: 10px;
 }
 
 .row {
@@ -273,7 +273,6 @@ ul li.right {
 
 #notes {
   padding-left: 15px;
-
 }
 
 /* ----------------------------------------------------------------------- */
