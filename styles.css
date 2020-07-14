@@ -24,7 +24,8 @@ div.row {
 
 div.header {
   background-color: #aaeaff;
-  color: #0f5a74;
+  /* color: #0f5a74; */
+  color: rgb(203, 17, 228);
   text-align: center;
   font-weight: bold;
   padding: 15px 0px;
