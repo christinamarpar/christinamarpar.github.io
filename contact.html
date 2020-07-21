@@ -3,6 +3,18 @@
     <head>
         <link rel="stylesheet" href="./styles.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Montserrat&display=swap" rel="stylesheet">
+        
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        
+        <script>
+            function onSubmit(token) {
+              document.getElementById("contact-form").submit();
+            }
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/js/contact_submitToAPI.js"></script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -15,41 +27,28 @@
 
             <div id ="content-wrap">
                 <div class="container" id="contact">
-
-                    <form 
-                        id="contact-form" 
-                        method="POST"
-                    >
-
-                    <!-- action="https://hooks.zapier.com/hooks/catch/7953193/ozomdd3" 
-                    type="POST" -->
+                    <form id="contact-form" method="POST">
                         <br>
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name-input" placeholder="Your name.."  required >
+                        <input type="text" id="name-input" name="name-input" placeholder="Your name.."  required >
 
                         <label for="subject">Subject*</label>
-                        <input type="text" id="subject" name="subject-input" placeholder="Subject.."  required >
-                    
+                        <input type="text" id="subject-input" name="subject-input" placeholder="Subject.."  required >
+
                         <label for="message">Message*</label>
-                        <textarea type="text" id="message" name="message-input" placeholder="Message.."  required  style="height:200px"></textarea>
-                        
+                        <textarea type="text" id="message-input" name="message-input" placeholder="Message.."  required  style="height:200px"></textarea>
+
                         <br>
                         <label for="email">E-mail Address*: </label>
-                        <input type="email" id="email" name="email-input" placeholder="Your e-mail.."  required style="width:100%;">
+                        <input type="email" id="email-input" name="email-input" placeholder="Your e-mail.."  required style="width:100%;">
 
-                        <!-- The following is an invisible input box, so only a spammer bot will fill it in. -->
-                        <!-- <input type="text" name="foo" style="display: none;"> -->
-
-                        <!-- <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div> -->
-                        
                         <div style="text-align:center;">
-                            <br>
-                            <p>Submit button coming soon, thank you for your patience! :)</p>
-                            <!-- <input type="submit" value="Submit" id="Form-submit" /> -->
-                            <br>
+                            <br><button type="button" onClick="submitToAPI(event)" class="g-recaptcha"
+                            data-sitekey="6LeJaLIZAAAAAFL7Vz1OMKkfmvAH1LhcNT_C9XiG" data-callback='onSubmit' data-action='submit'
+                            data-badge="inline">
+                            Submit</button><br><br>
                         </div>
                     </form>
-                    
                 </div>
             </div>
             <footer class = "footer_below">
