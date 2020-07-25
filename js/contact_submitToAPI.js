@@ -9,17 +9,7 @@ function submitToAPI(e) {
          }
 
          if ($("#email-input").val()=="") {
-            alert ("Please enter your email id");
-            return;
-         }
-
-         if ($("#subject-input").val()=="") {
-            alert ("Please enter a subject line");
-            return;
-         }
-
-         if ($("#message-input").val()=="") {
-            alert ("Please enter a message line");
+            alert ("Please enter your email address");
             return;
          }
 
@@ -27,6 +17,16 @@ function submitToAPI(e) {
          if (!reemail.test($("#email-input").val())) {
              alert ("Please enter valid email address");
              return;
+         }
+
+         if ($("#subject-input").val()=="") {
+            alert ("Please enter a subject");
+            return;
+         }
+
+         if ($("#message-input").val()=="") {
+            alert ("Please enter a message");
+            return;
          }
 
     var name = $("#name-input").val();
@@ -45,10 +45,9 @@ function submitToAPI(e) {
       type: "POST",
       url: "https://uy3jnnjkr4.execute-api.us-east-1.amazonaws.com/prod/rest/contact",
       //url : "https://uy3jnnjkr4.execute-api.us-east-1.amazonaws.com/prod",
+      dataType: "json",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
-
-      dataType: "json",
       data: JSON.stringify(data),
       cache: false,
       
